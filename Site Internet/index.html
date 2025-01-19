@@ -8,26 +8,29 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Bande avec logo, titre et barre de recherche -->
+    <!-- En-tête avec bouton de mode sombre et barre de recherche -->
     <header class="header">
         <img src="logo.png" alt="Logo" class="logo">
         <h1>Collection de Cartes Harry Potter</h1>
         <input type="text" placeholder="Rechercher une carte..." class="search-bar">
+        <button id="theme-toggle">Mode Sombre</button>
     </header>
 
-    <!-- Menu de navigation -->
+    <!-- Menu de navigation vers les différentes sections et les nouvelles pages -->
     <nav class="nav-bar">
         <a href="index.html">Accueil</a>
         <a href="personnages.html">Personnages</a>
         <a href="creatures.html">Créatures</a>
         <a href="objets.html">Objets</a>
+        <a href="connexion.html">Connexion</a>
+        <a href="inscription.html">Inscription</a>
     </nav>
 
-    <!-- Texte d'introduction -->
+    <!-- Section principale avec un message de bienvenue -->
     <main>
         <section class="intro">
             <h2>Bienvenue dans l'univers magique et fantastique de Harry Potter !</h2>
-            <h2>Sur ce site, vous pourrez retrouver par catégorie toutes les cartes qui sont disponibles à la collections. En partant de Dumbledore jusqu'à l'épée de Godrick griffondor, en passant l'Hippogriffe, venez découvrir l'incroyable monde magique de Poudlard et les secrets qui en regorge.</h2>
+            <p>Explorez les cartes classées par catégories et découvrez les secrets de Poudlard.</p>
         </section>
 
         <!-- Carrousel des cartes -->
@@ -37,15 +40,12 @@
                 <div class="card"><img src="images/harry.png" alt="Harry Potter"></div>
                 <div class="card"><img src="images/hermione.png" alt="Hermione Granger"></div>
                 <div class="card"><img src="images/ron.png" alt="Ron Weasley"></div>
-                <div class="card"><img src="images/dumbledore.png" alt="Albus Dumbledore"></div>
-                <div class="card"><img src="images/mcgonagall.png" alt="Minerva McGonagall"></div>
-                <div class="card"><img src="images/flitwick.png" alt="Filius Flitwick"></div>
-                <!-- Ajoutez d'autres cartes pour le carrousel ici -->
             </div>
             <button class="carousel-button next">&#9654;</button>
         </section>
     </main>
 
+    <!-- Pied de page avec droits d'auteur -->
     <footer>
         <p>&copy; 2024 Collection Harry Potter. Tous droits réservés.</p>
     </footer>

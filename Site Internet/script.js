@@ -14,3 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
         carousel.scrollTo({ left: scrollPosition, behavior: 'smooth' });
     });
 });
+
+
+document.getElementById('theme-toggle').addEventListener('click', () => {
+    // Alterne la classe "dark-mode" sur le body
+    document.body.classList.toggle('dark-mode');
+
+    // Change le texte du bouton en fonction du mode actif
+    const themeButton = document.getElementById('theme-toggle');
+    themeButton.textContent = document.body.classList.contains('dark-mode') ? 'Mode Clair' : 'Mode Sombre';
+});
